@@ -1,16 +1,165 @@
 
 /* RESET */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: #c0df34;
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
 /* TYPOGRAPHY */
-
-/* LAYOUT */
-
-/* MEDIA QUERIES */
-
 
 body {
     font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    color: var(--cyan);
+}
+
+.join-community h2 {
+    color: var(--bright-yellow);
+}
+
+.join-community p {
+    color: var(--grayish-blue);
+}
+
+p {
+    color: var(--light-gray);
+    line-height: 1.7em;
+}
+
+h2 {
+    color: white;
+}
+
+span.subscription-price,
+span.subscription-duration {
+    color: white;
+}
+
+span.subscription-price {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+span.subscription-duration {
+    color: var(--light-gray);
+}
+
+button {
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+footer p{
+    color: black;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* LAYOUT */
+
+body {
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 90%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+main,
+footer {
+    margin-top: auto;
+}
+
+section {
+    padding: 1.2em;
+}
+
+.join-community {
+    background-color: white;
+}
+
+.join-community h2 {
+    margin-top: 1em;
+}
+
+p {
+    margin-top: 1.2em;
+}
+
+.subscription {
+    background-color: rgba(43,179,177,255);
+}
+
+.subscription div {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+span.subscription-price,
+span.subscription-duration {
+    display: block;
+}
+
+span.subscription-duration {
+    margin-left: 1em;
+}
+
+.subscription p {
+    margin-top: 0.5em;
+}
+
+button {
+    border: none;
+    background-color: var(--bright-yellow);
+    width: 100%;
+    border-radius: 5px;
+    height: 50px;
+    margin-top: 1.5em;
+    box-shadow: 0px 5px 50px 0px rgba(0,0,0,0.15);
+}
+
+.why-us {
+    background-color: rgba(74,190,189,255);
+}
+
+.why-us div {
+    margin-top: 1em;
+}
+
+.why-us p {
+    margin-top: 0;
+}
+
+footer {
+    margin-bottom: 1em;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+
